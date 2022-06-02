@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+body{
+    background-color: #72c0ea;
+    min-block-size: 100%;
+    font-family: 'Fugaz One', cursive;
+    display: grid;
+    place-content: center;
+    padding: 5vmin;
+}
+
+h1{
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  max-inline-size: 15ch;
+  background-image: linear-gradient(to left, #7a41bf, #00a6ff);
+  
+  /*  larger font size, more shadow distance  */
+  text-shadow: .1em .1em 0 rgb(208, 243, 246);
+
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+input{
+    background-color: #565656;
+    font-family: 'Fugaz One', cursive;
+    font-size: 1.5rem;
+    margin:10px;
+    width:100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    color:azure;
+}
+
+#button{
+    background-color:#0798ff;
+    font-family:'Fugaz One', cursive;
+    font-size:1.1rem;
+    color: azure;
+    padding: 12px 20px;
+    border-radius:20px;
+    border:none;
+    margin:10px;
+}
+
+#button:hover{
+    background-color: #807f82;
+}
+
+#button:active{
+    background-color: #79080e;
+    box-shadow: 0 5px #666;
+    transform: translateY(1px);
+}
+
+
+/* Media CSS */
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    body{
+        background-color: #0325a9;
+    }
+  }
+  @media (max-width: 1080px) {
+    body{
+        background-color: #30cef9;
+    }
+  }
+  @media (max-width: 768px) {
+    body{
+        background-color: #6ccfeb;
+    }
+  }
